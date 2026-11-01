@@ -1,15 +1,49 @@
 {
   "name": "dsh-preflight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static package-surface preflight for DeepSeek Harness plugin bundles: metadata, bundle patch, skill frontmatter, unsupported artifacts, lifecycle scripts, and size.",
   "type": "module",
-  "bin": { "dsh-preflight": "bin/dsh-preflight.mjs" },
-  "exports": { ".": "./plugin/index.js", "./preflight": "./src/preflight.mjs", "./plugin": "./plugin/index.js", "./icon": "./icon.svg" },
-  "files": ["bin", "src", "plugin", "skills", "icon.svg", "README.md", "NOTICE.md", "LICENSE"],
-  "dsh": { "bundle": { "patch": "./plugin/cordis.patch.yml" } },
-  "engines": { "node": ">=20" },
-  "keywords": ["dsh", "deepseek-harness", "preflight", "packaging", "plugin", "validation"],
+  "bin": {
+    "dsh-preflight": "bin/dsh-preflight.mjs"
+  },
+  "exports": {
+    ".": "./plugin/index.js",
+    "./preflight": "./src/preflight.mjs",
+    "./plugin": "./plugin/index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "bin",
+    "src",
+    "plugin",
+    "skills",
+    "icon.svg",
+    "README.md",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./plugin/cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "preflight",
+    "packaging",
+    "plugin",
+    "validation"
+  ],
   "license": "MIT",
-  "scripts": { "test": "node --test test/*.test.mjs" },
-  "repository": { "type": "git", "url": "https://github.com/lengrufeng2008/dsh-preflight" }
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lengrufeng2008/dsh-preflight"
+  }
 }
