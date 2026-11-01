@@ -1,0 +1,4 @@
+- insert:
+    - id: good
+      name: good-fixture
+      config: {}
