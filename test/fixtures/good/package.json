@@ -1,0 +1,7 @@
+{
+  "name": "good-fixture",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": ["plugin", "skills", "README.md"],
+  "dsh": { "bundle": { "patch": "./plugin/cordis.patch.yml" } }
+}
