@@ -8,7 +8,11 @@
 ```bash
 node bin/dsh-preflight.mjs /path/to/plugin
 node bin/dsh-preflight.mjs /path/to/plugin --json
+node bin/dsh-preflight.mjs --tarball /path/to/package.tgz
 ```
+
+The tarball mode checks the actual `npm pack` output: required files, bundle patch, lifecycle
+scripts, unsupported entries, and `test/`/`dist/` residue.
 
 In DSH:
 
